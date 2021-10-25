@@ -1,0 +1,74 @@
+
+    /*  .table {
+
+          margin-top: -9px;
+          border: 15px solid #F2F8F8;
+          border-top: 5px solid #F2F8F8;
+          border-collapse: collapse;
+      }
+      .table th {
+          font-weight: bold;
+          padding: 5px;
+          background: #F2F8F8;
+          border: 1px solid #dddddd;
+          border-bottom: 5px solid #F2F8F8;
+      }
+      .table td {
+          width: auto;
+          height: auto;
+          border: 1px solid #dddddd;
+          border-bottom: 5px solid #F2F8F8;
+      }
+  */
+
+.messages {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    border-radius: 20px;
+    padding: 8px 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.mine {
+    width: 300px;
+    margin-bottom: 30px;
+
+
+}
+
+.mine .message {
+    color: white;
+
+    background: rgb(13,190,53);
+    position: relative;
+}
+
+.mine .message.last:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    right: -8px;
+    height: 20px;
+    width: 20px;
+    background: rgb(13,190,53);
+    border-bottom-left-radius: 15px;
+}
+
+.mine .message.last:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: -10px;
+    width: 10px;
+    height: 20px;
+    background: white;
+    border-bottom-left-radius: 10px;
+}

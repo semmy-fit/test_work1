@@ -1,0 +1,139 @@
+
+/*.table {
+
+    margin-top: -9px;
+    border: 15px solid #F2F8F8;
+    border-top: 5px solid #F2F8F8;
+    border-collapse: collapse;
+}
+.table th {
+    font-weight: bold;
+    padding: 5px;
+    background: #F2F8F8;
+    border: 1px solid #dddddd;
+    border-bottom: 5px solid #F2F8F8;
+}
+.table td {
+    width: auto;
+    height: auto;
+    border: 1px solid #dddddd;
+    border-bottom: 5px solid #F2F8F8;
+}*/
+
+.comment-section{
+    list-style: none;
+    max-width:400px;
+    /*width:100%;*/
+    margin: 50px auto;
+    padding:10px;
+    font-size:13px;
+}
+.comment{
+
+    border-radius:3px;
+    margin-bottom:-65px;
+    flex-wrap: wrap;
+}
+.comment p{
+    line-height: 1.5;
+    padding: 18px 22px;
+    width: 80%;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.comment .info a{
+    display: block;
+    text-decoration: none;
+    color: #656c71;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0 3px 0;
+}
+.comment .info span{
+    font-size: 11px;
+    color: #9ca7af;
+}
+.pull-left{
+    margin-left: -40px;
+    margin-bottom: -10px;
+}
+.comment .avatar img{
+    display: block;
+    margin-left:-45px;
+    margin-bottom: -40px;
+    border-radius: 50%;
+}
+
+
+.comment.author-comment .avatar{
+    order: 2;
+    padding: 10px 3px 0 18px;
+}
+.comment.author-comment p {
+    background-color: #c7f8b8;
+    order: 1;
+}
+.author-comment p:after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid #c7f8b8;
+    right: -8px;
+    top: 2px;
+}
+.comment.author-comment p{
+    order: 1;
+}
+.messages {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.message {
+    border-radius: 20px;
+    padding: 8px 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.mine {
+    width: 300px;
+    margin-bottom: 30px;
+    padding-left: 40%;
+
+}
+.mine .message {
+    color: white;
+
+    background: rgb(13,190,53);
+    position: relative;
+    margin-top: 50px;
+}
+.mine .message.last:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    right: -8px;
+    height: 20px;
+    width: 20px;
+    background: rgb(13,190,53);
+    border-bottom-left-radius: 15px;
+}
+.mine .message.last:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: -10px;
+    width: 10px;
+    height: 20px;
+    background: white;
+    border-bottom-left-radius: 10px;
+}
